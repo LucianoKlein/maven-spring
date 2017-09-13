@@ -11,6 +11,7 @@ public class Demo {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 
 		User user = (User) ac.getBean("user");
-		//System.out.println(user.getName());
+		System.out.println("name:" + user.getName() + ",age:" + user.getAge());
+		System.out.println("car.name:" + user.getCar().getName());
 	}
 }

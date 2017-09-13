@@ -9,6 +9,14 @@
 							http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd 
 							http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd ">
 
-	<bean name="user" class="org.hexin.pojo.User"></bean>
+	<bean name="user" class="org.hexin.pojo.User">
+		<property name="name" value="tom"></property>
+		<property name="age" value="18"></property>
+		<property name="car" ref="car"></property>
+	</bean>
 	
+	<bean name="car" class="org.hexin.pojo.Car">
+		<property name="color" value="黄色"></property>
+		<property name="name" value="兰博基尼"></property>
+	</bean>
 </beans>
