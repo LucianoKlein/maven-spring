@@ -7,6 +7,7 @@
 	<!-- 定义版本号 -->
 	<properties>
 		<spring.version>4.2.4.RELEASE</spring.version>
+		<javax.version>1.2</javax.version>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -45,5 +46,22 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- dependency -->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>${javax.version}</version>
+		</dependency>
+		
 	</dependencies>
 </project>
